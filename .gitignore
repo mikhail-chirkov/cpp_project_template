@@ -1,0 +1,5 @@
+# Prerequisites
+build/
+.vscode
+CMakeUserPresets.json
+Makefile
