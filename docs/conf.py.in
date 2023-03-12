@@ -1,0 +1,9 @@
+# Project settings
+project = "@CMAKE_PROJECT_NAME@"
+version = "@PROJECT_VERSION@"
+# Extensions
+extensions = [ "breathe" ]
+breathe_projects = { "@CMAKE_PROJECT_NAME@": "@CMAKE_CURRENT_BINARY_DIR@/xml" }
+breathe_default_project = "@CMAKE_PROJECT_NAME@"
+# Theme
+html_theme = 'alabaster'

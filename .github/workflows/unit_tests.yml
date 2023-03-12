@@ -1,0 +1,30 @@
+name: Unit tests
+
+on:
+  push
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ./.github/actions/configure
+      with:
+        build_type: ${{env.BUILD_TYPE}}
+
+    - name: Build tests
+      working-directory: ${{github.workspace}}
+      run: |
+        . ./build/${{env.BUILD_TYPE}}/generators/conanbuild.sh
+        export BUILD_TYPE_LOWER=$(echo ${{env.BUILD_TYPE}} | tr "[:upper:]" "[:lower:]")   
+        cmake --build --preset conan-$BUILD_TYPE_LOWER --target unit_tests
+        
+    - name: Run tests
+      working-directory: ${{github.workspace}}/build/${{env.BUILD_TYPE}}
+      run: |
+        . ./generators/conanrun.sh
+        ctest -V

@@ -1,0 +1,27 @@
+name: Docs
+
+inputs:
+   build_type:
+     required: true
+
+runs:
+  using: "composite"
+  steps:
+  - uses: actions/checkout@v3
+    
+  - name: Install dependencies
+    shell: bash
+    run: |
+      sudo apt-get update
+      sudo apt install doxygen
+      pip install -r requirements.txt
+      pip install conan
+      conan install ${{github.workspace}} --build=missing -s build_type=${{inputs.build_type}} -pr:b=${{github.workspace}}/.conan/profiles/clang -pr:h=${{github.workspace}}/.conan/profiles/clang
+      
+  - name: Configure CMake
+    shell: bash
+    working-directory: ${{github.workspace}}
+    run: |
+      . ./build/${{inputs.build_type}}/generators/conanbuild.sh
+      export BUILD_TYPE_LOWER=$(echo ${{inputs.build_type}} | tr "[:upper:]" "[:lower:]")
+      cmake --preset conan-$BUILD_TYPE_LOWER
