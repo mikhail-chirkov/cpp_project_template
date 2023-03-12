@@ -66,7 +66,7 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_PROGRAM_PATH "/home/runner/.conan2/p/cmakef4e4ed8e95b42/p/bin")
+list(PREPEND CMAKE_PROGRAM_PATH "/home/runner/.conan2/p/cmake47b0f78d7395a/p/bin")
 list(PREPEND CMAKE_LIBRARY_PATH "/home/runner/.conan2/p/gtestedc1fe8415101/p/lib" "/home/runner/.conan2/p/benchb243d61c52e31/p/lib")
 list(PREPEND CMAKE_INCLUDE_PATH "/home/runner/.conan2/p/gtestedc1fe8415101/p/include" "/home/runner/.conan2/p/benchb243d61c52e31/p/include")
 
