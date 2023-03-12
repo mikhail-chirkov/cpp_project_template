@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar-14 qc libsimple_library.a CMakeFiles/simple_library.dir/simple_library.cpp.o
+/usr/bin/llvm-ranlib-14 libsimple_library.a

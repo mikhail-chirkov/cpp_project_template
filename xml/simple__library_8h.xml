@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="simple__library_8h" kind="file" language="C++">
+    <compoundname>simple_library.h</compoundname>
+    <innerclass refid="classsimple__library" prot="public">simple_library</innerclass>
+    <briefdescription>
+<para>Simple library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="8" refid="classsimple__library" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsimple__library" kindref="compound">simple_library</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classsimple__library_1a54c73d12e33b7fa8cf7c61fb8735d2d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsimple__library_1a54c73d12e33b7fa8cf7c61fb8735d2d1" kindref="member">foo</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/cpp_project_template/simple_library.h"/>
+  </compounddef>
+</doxygen>

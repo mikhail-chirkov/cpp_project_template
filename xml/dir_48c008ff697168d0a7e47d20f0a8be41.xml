@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_48c008ff697168d0a7e47d20f0a8be41" kind="dir">
+    <compoundname>include/cpp_project_template</compoundname>
+    <innerfile refid="simple__library_8h">simple_library.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/cpp_project_template/"/>
+  </compounddef>
+</doxygen>

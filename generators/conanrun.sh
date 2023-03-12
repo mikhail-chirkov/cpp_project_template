@@ -1,0 +1,1 @@
+. "/home/runner/work/cpp_project_template/cpp_project_template/build/Release/generators/conanrunenv-release-x86_64.sh"

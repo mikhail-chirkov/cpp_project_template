@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classsimple__library" kind="class"><name>simple_library</name>
+    <member refid="classsimple__library_1a54c73d12e33b7fa8cf7c61fb8735d2d1" kind="function"><name>foo</name></member>
+  </compound>
+  <compound refid="simple__library_8h" kind="file"><name>simple_library.h</name>
+  </compound>
+  <compound refid="dir_48c008ff697168d0a7e47d20f0a8be41" kind="dir"><name>include/cpp_project_template</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsimple__library" kind="class" language="C++" prot="public">
+    <compoundname>simple_library</compoundname>
+    <includes refid="simple__library_8h" local="no">simple_library.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimple__library_1a54c73d12e33b7fa8cf7c61fb8735d2d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simple_library::foo</definition>
+        <argsstring>()</argsstring>
+        <name>foo</name>
+        <briefdescription>
+<para>function which prints stuff </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cpp_project_template/simple_library.h" line="11" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>simple class </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/cpp_project_template/simple_library.h" line="8" column="1" bodyfile="include/cpp_project_template/simple_library.h" bodystart="8" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classsimple__library_1a54c73d12e33b7fa8cf7c61fb8735d2d1" prot="public" virt="non-virtual"><scope>simple_library</scope><name>foo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
