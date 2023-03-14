@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/runner/.conan2/p/cmakec01e4c6ec3283/p/bin/cmake
+CMAKE_COMMAND = /home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin/cmake
 
 # The command to remove a file.
-RM = /home/runner/.conan2/p/cmakec01e4c6ec3283/p/bin/cmake -E rm -f
+RM = /home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/runner/work/cpp_project_template/cpp_project_template/b
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/home/runner/.conan2/p/cmakec01e4c6ec3283/p/bin/ctest --force-new-ctest-process $(ARGS)
+	/home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -78,7 +78,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/runner/.conan2/p/cmakec01e4c6ec3283/p/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/runner/.conan2/p/cmakec01e4c6ec3283/p/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
