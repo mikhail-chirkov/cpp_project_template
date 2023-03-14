@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/runner/.conan2/p/cmake47b0f78d7395a/p/bin/cmake
+CMAKE_COMMAND = /home/runner/.conan2/p/cmake88aed3f92ceb8/p/bin/cmake
 
 # The command to remove a file.
-RM = /home/runner/.conan2/p/cmake47b0f78d7395a/p/bin/cmake -E rm -f
+RM = /home/runner/.conan2/p/cmake88aed3f92ceb8/p/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ include CMakeFiles/Nightly.dir/compiler_depend.make
 include CMakeFiles/Nightly.dir/progress.make
 
 CMakeFiles/Nightly:
-	/home/runner/.conan2/p/cmake47b0f78d7395a/p/bin/ctest -D Nightly
+	/home/runner/.conan2/p/cmake88aed3f92ceb8/p/bin/ctest -D Nightly
 
 Nightly: CMakeFiles/Nightly
 Nightly: CMakeFiles/Nightly.dir/build.make
