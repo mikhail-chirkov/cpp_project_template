@@ -16,6 +16,7 @@ runs:
     run: |
       sudo apt-get update
       sudo apt install doxygen
+      sudo apt install llvm
       pip install -r requirements.txt
       pip install conan
       conan install ${{github.workspace}} --build=missing -s build_type=${{inputs.build_type}} -pr:b=${{github.workspace}}/.conan/profiles/clang -pr:h=${{github.workspace}}/.conan/profiles/clang
