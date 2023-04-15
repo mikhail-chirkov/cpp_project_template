@@ -66,16 +66,16 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_PROGRAM_PATH "/home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin")
-list(PREPEND CMAKE_LIBRARY_PATH "/home/runner/.conan2/p/gtestedc1fe8415101/p/lib" "/home/runner/.conan2/p/benchb243d61c52e31/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "/home/runner/.conan2/p/gtestedc1fe8415101/p/include" "/home/runner/.conan2/p/benchb243d61c52e31/p/include")
+list(PREPEND CMAKE_PROGRAM_PATH "/home/runner/.conan2/p/cmake37b515ba42887/p/bin")
+list(PREPEND CMAKE_LIBRARY_PATH "/home/runner/.conan2/p/gtestedc1fe8415101/p/lib" "/home/runner/.conan2/p/bench05a23716b0abe/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "/home/runner/.conan2/p/gtestedc1fe8415101/p/include" "/home/runner/.conan2/p/bench05a23716b0abe/p/include")
 
 
 
 if (DEFINED ENV{PKG_CONFIG_PATH})
-set(ENV{PKG_CONFIG_PATH} "/home/runner/work/cpp_project_template/cpp_project_template/build/Release/generators:$ENV{PKG_CONFIG_PATH}")
+set(ENV{PKG_CONFIG_PATH} "${CMAKE_CURRENT_LIST_DIR}:$ENV{PKG_CONFIG_PATH}")
 else()
-set(ENV{PKG_CONFIG_PATH} "/home/runner/work/cpp_project_template/cpp_project_template/build/Release/generators:")
+set(ENV{PKG_CONFIG_PATH} "${CMAKE_CURRENT_LIST_DIR}:")
 endif()
 
 

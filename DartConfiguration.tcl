@@ -11,7 +11,7 @@ BuildDirectory: /home/runner/work/cpp_project_template/cpp_project_template/buil
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: fv-az166-526
+Site: fv-az934-804
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-clang++-14
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin/cmake" "/home/runner/work/cpp_project_template/cpp_project_template"
-MakeCommand: /home/runner/.conan2/p/cmake09ce08f4a9e81/p/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/home/runner/.conan2/p/cmake37b515ba42887/p/bin/cmake" "/home/runner/work/cpp_project_template/cpp_project_template"
+MakeCommand: /home/runner/.conan2/p/cmake37b515ba42887/p/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
