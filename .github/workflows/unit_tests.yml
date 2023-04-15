@@ -34,4 +34,5 @@ jobs:
       working-directory: ${{github.workspace}}
       run: |
         . ./build/${{env.BUILD_TYPE}}/generators/conanbuild.sh
+        export BUILD_TYPE_LOWER=$(echo ${{env.BUILD_TYPE}} | tr "[:upper:]" "[:lower:]")
         cmake --build --preset conan-$BUILD_TYPE_LOWER --target unit_tests_coverage
