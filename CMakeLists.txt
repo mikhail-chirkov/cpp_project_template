@@ -18,7 +18,6 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/docs/conf.py.in
     ${CMAKE_CURRENT_BINARY_DIR}/conf.py
 )
 
-#add_subdirectory(doc)
 add_subdirectory(src)
 
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
@@ -28,7 +27,7 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     endif()
 endif()
 
-
+# TODO: install presets
 #set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 #set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 #include(CPack)

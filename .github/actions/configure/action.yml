@@ -3,6 +3,8 @@ name: Docs
 inputs:
    build_type:
      required: true
+   cmake_flags:
+     required: false
 
 runs:
   using: "composite"
@@ -24,4 +26,4 @@ runs:
     run: |
       . ./build/${{inputs.build_type}}/generators/conanbuild.sh
       export BUILD_TYPE_LOWER=$(echo ${{inputs.build_type}} | tr "[:upper:]" "[:lower:]")
-      cmake --preset conan-$BUILD_TYPE_LOWER
+      cmake --preset conan-$BUILD_TYPE_LOWER ${{inputs.cmake_flags}}
