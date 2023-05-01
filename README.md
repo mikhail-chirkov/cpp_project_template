@@ -3,7 +3,7 @@
 ## Description:
 
 Ongoing template repo for C++ projects. What is implemented so far:
-- Conan 2.0 dependencies
+- Conan 2.0 dependency management
 - Basic GTest and Coverage setups
 - Doxygen+Sphinx docs
 - Github CI to run unit tests, build and deploy documentation
