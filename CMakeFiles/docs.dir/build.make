@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/runner/.conan2/p/cmake891a290da9ab5/p/bin/cmake
+CMAKE_COMMAND = /home/runner/.conan2/p/cmake253d953df1d2f/p/bin/cmake
 
 # The command to remove a file.
-RM = /home/runner/.conan2/p/cmake891a290da9ab5/p/bin/cmake -E rm -f
+RM = /home/runner/.conan2/p/cmake253d953df1d2f/p/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ include CMakeFiles/docs.dir/progress.make
 
 CMakeFiles/docs: Doxyfile.docs
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/runner/work/cpp_project_template/cpp_project_template/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate API documentation for docs"
-	cd /home/runner/work/cpp_project_template/cpp_project_template && /home/runner/.conan2/p/cmake891a290da9ab5/p/bin/cmake -E make_directory /home/runner/work/cpp_project_template/cpp_project_template/build/Release
+	cd /home/runner/work/cpp_project_template/cpp_project_template && /home/runner/.conan2/p/cmake253d953df1d2f/p/bin/cmake -E make_directory /home/runner/work/cpp_project_template/cpp_project_template/build/Release
 	cd /home/runner/work/cpp_project_template/cpp_project_template && /usr/bin/doxygen /home/runner/work/cpp_project_template/cpp_project_template/build/Release/Doxyfile.docs
 
 docs: CMakeFiles/docs
